@@ -34,6 +34,17 @@ This project creates a basic video processing pipeline on the PYNQ-Z2 board, out
 
 ## 🧱 Step 3: Block Design — Test Pattern Generator to HDMI
 
+## Preparation: Add Digilent Vivado Libraries for RGB2DVI IP
+
+The `rgb2dvi` IP core used in this project is part of the Digilent Vivado IP library. Before creating your Vivado project, make sure to add these IP cores to your Vivado environment.
+
+### Steps to add Digilent Vivado Libraries:
+
+1. Clone or download the Digilent Vivado library repository:
+
+   ```bash
+   git clone https://github.com/Digilent/vivado-library.git
+
 ### 🎛 3.1 Create Block Design
 
 1. In the Flow Navigator, go to **IP Integrator → Create Block Design**
