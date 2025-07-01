@@ -24,7 +24,7 @@ This project creates a basic video processing pipeline on the PYNQ-Z2 board, out
 
 > 💡 **Tip:** Ensure the folder structure is correct: `board_files/pynq-z2/1.0/board.xml`
 
-## Preparation: Add Digilent Vivado Libraries for RGB2DVI IP
+### Preparation: Add Digilent Vivado Libraries for RGB2DVI IP
 
 The `rgb2dvi` IP core used in this project is part of the Digilent Vivado IP library. Before creating your Vivado project, make sure to add these IP cores to your Vivado environment.
 
