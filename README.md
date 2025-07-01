@@ -24,16 +24,6 @@ This project creates a basic video processing pipeline on the PYNQ-Z2 board, out
 
 > 💡 **Tip:** Ensure the folder structure is correct: `board_files/pynq-z2/1.0/board.xml`
 
-## 🛠️ Step 2: Create New Vivado Project
-
-1. Open Vivado
-2. Select **Create New Project**
-3. Set a project name and location
-4. Choose **RTL Project** and enable "Do not specify sources at this time"
-5. In the "Default Part" window, go to **Boards** and select **PYNQ-Z2**
-
-## 🧱 Step 3: Block Design — Test Pattern Generator to HDMI
-
 ## Preparation: Add Digilent Vivado Libraries for RGB2DVI IP
 
 The `rgb2dvi` IP core used in this project is part of the Digilent Vivado IP library. Before creating your Vivado project, make sure to add these IP cores to your Vivado environment.
@@ -44,6 +34,20 @@ The `rgb2dvi` IP core used in this project is part of the Digilent Vivado IP lib
 
    ```bash
    git clone https://github.com/Digilent/vivado-library.git
+
+Download/clone repository to local directory.
+In Vivado go to Tools, Options, General, IP Catalog and add the path the local directory. This setting will apply to newly created projects.
+For existing projects go to Project settings, IP and Add Repository. The Digilent IP core should appear in the list below.   
+
+## 🛠️ Step 2: Create New Vivado Project
+
+1. Open Vivado
+2. Select **Create New Project**
+3. Set a project name and location
+4. Choose **RTL Project** and enable "Do not specify sources at this time"
+5. In the "Default Part" window, go to **Boards** and select **PYNQ-Z2**
+
+## 🧱 Step 3: Block Design — Test Pattern Generator to HDMI
 
 ### 🎛 3.1 Create Block Design
 
